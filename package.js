@@ -1,6 +1,6 @@
 Package.describe({
-  name: "hoihei:hompimpah-theme",
-  summary: "Hompimpah theme package",
+  name: "hoihei:hompimpah-mod",
+  summary: "Hompimpah modification package for telescopeapp",
   version: "0.0.1",
   git: "https://github.com/hoihei/hompimpah.git"
 });

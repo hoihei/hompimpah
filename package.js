@@ -9,6 +9,7 @@ Package.onUse(function (api) {
 
   // ---------------------------------- 1. Core dependency -----------------------------------
   api.use('telescope:core');
+  api.use('telescope:theme-hubble');
 
   // ---------------------------------- 2. Files to include ----------------------------------
 
@@ -20,6 +21,9 @@ Package.onUse(function (api) {
 
 
     // client
+    api.addFiles([
+      'client/stylesheet/posts.scss'
+    ], ['client']);
 
     // server
 

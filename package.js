@@ -9,20 +9,25 @@ Package.onUse(function (api) {
 
   // ---------------------------------- 1. Core dependency -----------------------------------
   api.use('telescope:core');
+  api.use('telescope:share');
   api.use('telescope:theme-hubble');
+  api.use('telescope:tagline-banner');
+  // api.use('telescope:embedly');
 
   // ---------------------------------- 2. Files to include ----------------------------------
 
   // client & server
 
   api.addFiles([
-    'lib/callbacks.js'
+    'lib/callbacks.js',
+    'lib/modules.js'
   ], ['client', 'server']);
 
 
     // client
     api.addFiles([
-      'client/stylesheet/posts.scss'
+      'client/stylesheet/posts.scss',
+      'client/templates/modules/post_domain.js'
     ], ['client']);
 
     // server
